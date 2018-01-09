@@ -9,15 +9,11 @@ module.exports = {
             "type": "string",
             "required": false,
             "message": "Project description",
-            "default": "A React project"
+            "default": "A Wechat App"
         },
         "author": {
             "type": "string",
             "message": "Author"
-        },
-        "wxenhancer": {
-            "type": "confirm",
-            "message": "use rxjs and wx-enhancer?"
         }
     },
     "completeMessage": "Have Fun!"

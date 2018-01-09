@@ -38,9 +38,6 @@
     "less-import-aliases": "^1.0.2"
   },
   "dependencies": {
-    {{#wxenhancer}}
-    "rxjs": "5.0.0",
-    "wx-enhancer": "^1.0.0"
-    {{/wxenhancer}}
+
   }
 }

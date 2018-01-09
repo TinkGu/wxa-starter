@@ -16,7 +16,7 @@
 
 ```bash
 npm install -g vue-cli
-vue init TinkGu/wxa-start my-project
+vue init TinkGu/wxa-starter my-project
 cd my-project
 npm install
 npm start
