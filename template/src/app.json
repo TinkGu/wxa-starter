@@ -1,0 +1,11 @@
+{
+  "pages":[
+     "example/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "{{ name }}",
+    "navigationBarTextStyle":"black"
+  }
+}
