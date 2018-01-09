@@ -1,0 +1,24 @@
+{
+  "name": "wxa-starter",
+  "version": "1.0.0",
+  "description": "template for weixin app project",
+  "keywords": [
+    "wx",
+    "wxa",
+    "wechat",
+    "cli",
+    "boilerplate",
+    "starter"
+  ],
+  "main": "meta.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TinkGu/wxa-starter.git"
+  },
+  "author": "TinkGu <tlwrite@126.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TinkGu/wxa-starter/issues"
+  },
+  "homepage": "https://github.com/TinkGu/wxa-starter#readme"
+}
