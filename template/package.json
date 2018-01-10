@@ -29,6 +29,7 @@
     "gulp-batch": "^1.0.5",
     "gulp-if": "^2.0.2",
     "gulp-imagemin": "^4.0.0",
+    "gulp-json5-to-json": "^0.2.1",
     "gulp-less": "^3.3.2",
     "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^2.6.1",

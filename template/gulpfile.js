@@ -6,6 +6,7 @@ const watch = require('gulp-watch')
 const batch = require('gulp-batch')
 const gwcn = require('gulp-wxa-copy-npm')
 const less = require('gulp-less')
+const json5 = require('gulp-json5-to-json')
 const LessAlias = require('less-import-aliases')
 const imagemin = require('gulp-imagemin')
 const svgmin = require('gulp-svgmin')
@@ -31,10 +32,11 @@ const htmlFiles = match(['html'])
 const lessFiles = match(['less'])
 const jsFiles = match(['js'])
 const jsonFiles = match(['json'])
+const json5Files = match(['json5'])
 const imgFiles = match(['jpg', 'png', 'gif'])
 const svgFiles = match(['svg'])
 const watchPath = []
-    .concat(htmlFiles, lessFiles, jsFiles, imgFiles, svgFiles, jsonFiles)
+    .concat(htmlFiles, lessFiles, jsFiles, imgFiles, svgFiles, jsonFiles, json5Files)
     .filter(item => !/^!/.test(item))
 
 gulp.task('html', () =>
@@ -65,7 +67,8 @@ gulp.task('js', () =>
         .pipe(sourcemapWrite())
         .pipe(dest()))
 
-gulp.task('json', () => gulp.src(jsonFiles).pipe(dest()))
+gulp.task('json5', () => gulp.src(json5Files).pipe(json5()).pipe(dest()))
+gulp.task('json', ['json5'], () => gulp.src(jsonFiles).pipe(dest()))
 
 // gulp.task('static', () => {
 //     fs.copy('src/static', 'dist/static').catch(err => console.error(err))
@@ -116,6 +119,7 @@ function setExt(p) {
         '.html': '.wxml',
         '.css': '.wxss',
         '.less': '.wxss',
+        '.json5': '.json',
     }
 
     const ext = path.extname(p)

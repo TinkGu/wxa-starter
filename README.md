@@ -8,6 +8,7 @@
 - 支持 npm 来管理 node_modules
 - 路径简写 （类似 webpack alias）
 - less
+- json5
 - watch
 
 # Usage
