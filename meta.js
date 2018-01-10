@@ -16,5 +16,6 @@ module.exports = {
             "message": "Author"
         }
     },
+    "skipInterpolation": "src/**/*.html",
     "completeMessage": "Have Fun!"
 };
